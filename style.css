@@ -1,0 +1,123 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;   /* centers horizontally */
+    align-items: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.3);
+}
+
+/* remove space from list if needed */
+nav ul {
+    display: none;  /* optional: hides menu if you only want name centered */
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    padding: 60px;
+}
+
+/* SKILLS */
+.skill-bar {
+    width: 80%;
+    background: gray;
+    margin: auto;
+    height: 20px;
+}
+.skill-level {
+    background: cyan;
+    height: 100%;
+}
+
+/* PROJECTS */
+.project-card {
+    background: rgba(255,255,255,0.1);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+}
+#contact {
+    margin-top: 40px;
+    padding: 30px;
+}
+
+#contact a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 15px;
+}
+.dark-mode {
+    background: #111;
+    color: #fff;
+}
+
+.dark-mode nav {
+    background: rgba(255,255,255,0.1);
+}
+
+.dark-mode .project-card {
+    background: rgba(255,255,255,0.05);
+}
+section {
+    padding: 60px 20px;
+}
+button {
+    background: #00d4ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0096c7;
+    transform: scale(1.05);
+}
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 95%;
+    }
+}
